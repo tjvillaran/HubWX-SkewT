@@ -1,0 +1,109 @@
+.ctrlicon {
+	font-size: 36px 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    }
+
+.tooltip .tooltiptext {
+    bottom: -10px;
+    left: 115px;
+    visibility: hidden;
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.tooltip .toolstiptxt {
+    bottom: -10px;
+    left: 90px;
+    visibility: hidden;
+    width: 350px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -60px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    top: 50%;
+    right: 100%;
+    content: "";
+    position: absolute;
+	margin-top: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.75;
+}
+
+.tooltip:hover .toolstiptxt {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tablediv {
+	border-bottom: 12px solid;
+    padding: 8px;
+}
+
+.minicalc {
+	position: absolute;
+	visibility: hidden;
+	opacity: 1;
+	background-color: #555;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup     */
+.popup .popuptext {
+	visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .show {
+    visibility: visible;
+}
+
+.mpTbl {
+	height: 575px;
+	overflow-y: scroll;
+}
+
+#thFlowTbl tr:nth-child(even){background-color: #384756;}
+#thFlowTbl tr:hover {background-color: #2C3845;}
